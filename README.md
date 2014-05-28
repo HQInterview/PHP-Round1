@@ -4,7 +4,7 @@ PHP Round #1
 This document contains description and requirements for Round #1 of interview for PHP developer position.
 
 ## Goal
-Verify applicant's ability to work with 3rd party libraries, with API's. Write clean and maintainable code.
+Verify applicant's ability to work with 3rd party libraries. Verify that applicant is able to write clean and testable code.
 
 ## Requirements
 1) Create Payment gateway library, that could handle payments with:
@@ -12,13 +12,11 @@ Verify applicant's ability to work with 3rd party libraries, with API's. Write c
 * [Paypal REST API](https://developer.paypal.com/docs/api/)
 * [Braintree payments](https://www.braintreepayments.com/docs/php/guide/overview)
 
-Library should be design in a way, that adding another payment gateway can be done without editing common code.
+Library should be designed for adding another payment gateways.
 
-Implement only single payment with credit card.
+2) Create a simple form for making payment. Form should have this fields:
 
-2) Create a simple form for adding credit card and making payment. Form should have this fields:
-
-* Amount
+* Credit card holder name
 * Currency (USD, EUR, THB, HKD, SGD, AUD)
 * Full name
 * Credit card number
@@ -28,9 +26,13 @@ Implement only single payment with credit card.
 Show success or error message after payment.
 Use appropriate form validations.
 
-3) Order data + response from payment gateway to database table.
+3) Save order data + response from payment gateway to database table.
+
+4) Fork this library on github, push your solution and request pull request. 
 
 ## Specification
+* Create your own sandbox accounts for Paypal and Braintree
+* Implement only single payment with credit card. No need to implement saving credit card and authorization of payments.
 * Use different gateway based on this rules:
   * if credit card type is AMEX, use Paypal
   * if currency is USD, EUR, or AUD, use Paypal. Use Braintree for others
@@ -40,3 +42,5 @@ Use appropriate form validations.
 * Use only Paypal and Braintree PHP libraries, no other 3rd party library.
 * Cover code with Unit tests
 
+## Bonus question
+* How would you handle security for saving credit cards?
