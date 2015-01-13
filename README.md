@@ -36,7 +36,7 @@ Use appropriate form validations.
 
 3) Save order data + response from payment gateway to database table.
 
-4) Fork this library on GitHub, push your solution and create a pull request.
+4) Create a public repository on Github and push the solution there. Send us the link to the repository.
 
 ## Bonus question
 
@@ -52,9 +52,9 @@ Use appropriate form validations.
   * if currency is **not** USD and credit card **is** AMEX, return error message, that AMEX is possible to use only for USD
 * Use any PHP framework you want or no framework at all, it's up to you.
 * Don't bother with any graphics, just simple HTML, simple form, no CSS needed. Or just use [Twitter Bootstrap](http://getbootstrap.com).
-* Use only Paypal and Braintree PHP libraries, not any other 3rd party libraries.
+* Use only Paypal, Braintree PHP libraries. You can use jQuery for form validations. Do not use any other 3rd party libraries.
 * Cover code with unit tests.
-* The code needs to work after we pull it and try it (no bugs) and should process the payments.
+* The code needs to work after we clone it and try it (no bugs) and should process the payments.
 
 ## Quality requirements
 
