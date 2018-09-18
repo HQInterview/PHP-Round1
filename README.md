@@ -23,11 +23,6 @@ Library should be designed to easily add another additional payment gateways.
   * Price (amount)
   * Currency (USD, EUR, THB, HKD, SGD, AUD)
   * Customer Full name
-* In payment section:
-  * Credit card holder name
-  * Credit card number
-  * Credit card expiration
-  * Credit card CCV
 * Submit button
 
 Show success or error message after payment. 
@@ -41,7 +36,7 @@ Use appropriate form validations.
 ## Specification
 
 * Create your own sandbox accounts for Paypal and Braintree
-* To make it easier, implement only **single payment** with credit card. No need to implement saving credit card and authorization of payments (unless you really want to try it out).
+* To make it easier, implement only **single payment**.
 * After submitting the form, use a different gateway based on these rules:
   * if credit card type is AMEX, then use Paypal.
   * if currency is USD, EUR, or AUD, then use Paypal. Otherwise use Braintree.
@@ -60,8 +55,3 @@ Similarly as during any other code review in our team, we'll be checking the fol
 * usage of the configuration files
 * usage of the unit tests
 * naming convention
-
-## Bonus question
-
-* How would you handle security for saving credit cards?
-
