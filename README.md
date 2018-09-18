@@ -23,6 +23,11 @@ Library should be designed to easily add another additional payment gateways.
   * Price (amount)
   * Currency (USD, EUR, THB, HKD, SGD, AUD)
   * Customer Full name
+* In payment section:
+  * Credit card holder name
+  * Credit card number
+  * Credit card expiration
+  * Credit card CCV
 * Submit button
 
 Show success or error message after payment. 
