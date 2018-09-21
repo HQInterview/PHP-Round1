@@ -50,9 +50,11 @@ Use appropriate form validations.
 * Use any PHP framework you want or no framework at all, it's up to you.
 * Don't bother with any graphics, just simple HTML, simple form, no CSS needed. Or just use [Twitter Bootstrap](http://getbootstrap.com).
 * Use only Adyen, Braintree PHP libraries. You can use jQuery for form validations. Do not use any other 3rd party libraries.
-* Cover code with unit tests.
+* Cover code with unit test and integration test. Using mocks if there's any 3rd party request.
 * The code needs to work after we clone it and try it (no bugs) and should process the payments.
-* Tips: the specifications mentions above are important to our decision, please follow :)
+* Brownie points if you can use docker so we don't have to configure anything on our side.
+
+*Tips: the specifications mentions above are important to our decision, please follow :)*
 
 ## Quality requirements
 
